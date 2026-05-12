@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE MAGAZINE | Personality Book</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+    <!-- ========== HOME PAGE ========== -->
+    <div id="homePage" class="home-page">
+        <!-- Header -->
+        <div class="magazine-header">
+            <div class="header-logo">VIBE MAGAZINE</div>
+            <div class="header-tagline">The Personality Book Edition</div>
+            <div class="header-issue">MINI PROJECT</div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-badge">✨ EXCLUSIVE PERSONALITY REVEAL ✨</div>
+            <h1 class="hero-title">WHO ARE YOU<br>REALLY?</h1>
+            <p class="hero-subtitle">Answer 6 questions. Get your full personality magazine book.<br>Strengths. Weaknesses. Compatibility. Daily predictions.</p>
+            <button class="start-btn" id="startQuizBtn">BEGIN YOUR STORY →</button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <div class="feature-title">Your Magazine Book</div>
+                <div class="feature-desc">Beautiful 6-page personality book made just for you</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔮</div>
+                <div class="feature-title">Deep Personality Profile</div>
+                <div class="feature-desc">Discover your strengths, weaknesses, and true self</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <div class="feature-title">Strengths Revealed</div>
+                <div class="feature-desc">What makes you unique and powerful</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">Daily Predictions</div>
+                <div class="feature-desc">Personalized advice from the universe</div>
+            </div>
+        </div>
+
+        <!-- Gallery Preview Section -->
+        <div class="gallery-preview">
+            <div class="gallery-preview-title">📚 RECENT MAGAZINES</div>
+            <div class="gallery-preview-grid" id="homeGalleryGrid">
+                <div class="empty-gallery">✨ No magazines yet. Take the quiz first! ✨</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>VIBE MAGAZINE • Know Yourself Better</p>
+            <p class="footer-disclaimer">For entertainment purposes only • Made with ✨ for the dreamers</p>
+        </div>
+    </div>
+
+    <!-- ========== QUIZ AREA (Hidden Initially) ========== -->
+    <div id="quizArea" class="quiz-area" style="display: none;">
+        <div class="quiz-header">
+            <div class="quiz-logo">VIBE MAGAZINE</div>
+            <div class="quiz-progress-container">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="progressFill"></div>
+                </div>
+                <div class="quiz-progress-text" id="progressText">Question 1 of 6</div>
+            </div>
+        </div>
+
+        <div id="questionContainer"></div>
+
+        <div class="quiz-error-msg" id="errorMsg">⚠️ Please select an answer before continuing!</div>
+    </div>
+
+    <!-- ========== RESULT AREA (Hidden Initially) ========== -->
+    <div id="resultArea" class="result-area"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
