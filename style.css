@@ -1,0 +1,190 @@
+/* ============================================
+   CUSTOM CSS FOR PERSONALITY TEST MAGAZINE
+   Complements Bootstrap 5 styling
+============================================ */
+
+/* ----- BASE STYLES & TYPOGRAPHY ----- */
+body {
+    background: #f7f4ef;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, .magazine-headline, .display-5, .display-4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* ----- MAGAZINE COMPONENTS ----- */
+.magazine-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #e9e5dd;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Custom card style for magazine feel */
+.card-magazine {
+    border: none;
+    background: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 28px -8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.card-magazine:hover {
+    transform: translateY(-4px);
+}
+
+/* Question card with left accent border */
+.question-card {
+    border-left: 6px solid #d4af7a;
+    border-radius: 1.25rem;
+}
+
+/* Result cover styling */
+.result-cover {
+    background: #212529;
+    color: #f8f3e6;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+/* ----- MAGAZINE COLUMN LAYOUT ----- */
+.magazine-columns {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.magazine-columns p {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+/* Responsive: single column on mobile */
+@media (max-width: 768px) {
+    .magazine-columns {
+        column-count: 1;
+        column-rule: none;
+    }
+}
+
+/* ----- BADGES & CHIPS ----- */
+.strength-badge {
+    background: #e9ecef;
+    border-radius: 40px;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.personality-chip {
+    background: #f8f9fa;
+    border-radius: 60px;
+    padding: 0.4rem 1rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/* ----- CUSTOM BUTTONS ----- */
+.btn-gold-outline {
+    border: 1px solid #d4af7a;
+    background: transparent;
+    color: #2c2b28;
+    transition: all 0.2s ease;
+}
+
+.btn-gold-outline:hover {
+    background: #d4af7a;
+    color: white;
+    border-color: #d4af7a;
+}
+
+/* ----- PROGRESS BAR CUSTOM ----- */
+.progress-step {
+    transition: all 0.2s;
+}
+
+/* ----- FORM STYLES (Overriding Bootstrap subtly) ----- */
+.form-check {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-check:hover {
+    background-color: #f8f5f0 !important;
+    border-color: #d4af7a !important;
+}
+
+.form-check-input:checked {
+    background-color: #d4af7a;
+    border-color: #d4af7a;
+}
+
+.form-check-input:focus {
+    border-color: #d4af7a;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 122, 0.25);
+}
+
+/* ----- ALERT CUSTOMIZATION ----- */
+.alert-warning {
+    background-color: #fef3c7;
+    border-color: #fde68a;
+    color: #92400e;
+    border-radius: 1rem;
+}
+
+/* ----- FOOTER LINKS & MISC ----- */
+footer a {
+    text-decoration: none;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* ----- SCATTERED CARD IMAGE PLACEHOLDER EFFECTS ----- */
+.card-magazine i.bi {
+    transition: transform 0.2s ease;
+}
+
+.card-magazine:hover i.bi {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar for subtle magazine feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e9e5dd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8aa8c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b8b6b;
+}
